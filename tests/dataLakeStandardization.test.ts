@@ -9,7 +9,7 @@ describe("FFLEXAT standardization", () => {
 
     test("uses the FFLEXAT identity", () => {
         expect(String(pbiviz.visual.name)).toBe("FFLEXAT");
-        expect(String(pbiviz.visual.displayName)).toBe("FFLEXAT");
+        expect(String(pbiviz.visual.displayName)).toBe("Data Lake Variance Table");
         expect(renderer).toContain("FFLEXAT");
     });
 
