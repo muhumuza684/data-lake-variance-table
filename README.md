@@ -1,21 +1,14 @@
-# FFLEXAT
+# Data Lake Variance Table
 
-FFLEXAT — governed comparison tables for actual, plan, forecast, and variance analysis.
+Repository slug: data-lake-variance-table
+Artifact: data-lake-variance-table-pbiviz
 
-## Current platform status
+Power BI visual product: Data Lake Variance Table.
 
-This project inherits the sanitized Data Lake Tables platform for packaging, settings persistence, accessibility, diagnostics, export governance, localization, and regression testing.
+Advanced comparison table with actuals, previous values, plan, forecast, variance indicators, totals, and governed formatting.
 
-**Implementation focus:** Comparison table foundation; visual-specific variance renderer is the next implementation layer.
+This is an independently implemented Data Lake visual. Reference materials informed observable functionality only; proprietary source code, logos, identifiers, and protected branding were not copied.
 
-This is an independent implementation. It does not include proprietary source code, logos, assets, identifiers, or branding from reference visuals.
+## Validation
 
-## Data contract
-
-- `category` — Category (Grouping)
-- `group` — Group (Grouping)
-- `values` — Values (Measure)
-- `previous` — Previous (Measure)
-- `plan` — Plan (Measure)
-- `forecast` — Forecast (Measure)
-- `tooltips` — Tooltips (Grouping)
+Run npm ci, npm run test:ci, npx tsc --noEmit -p ., and npx pbiviz package before release. Complete a Power BI Desktop smoke test with representative data before publishing.

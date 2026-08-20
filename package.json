@@ -1,33 +1,33 @@
 {
-  "name": "fflexat",
-  "version": "1.0.0",
-  "description": "FFLEXAT \u2014 governed comparison tables for actual, plan, forecast, and variance analysis.",
-  "private": true,
-  "scripts": {
-    "start": "pbiviz start",
-    "package": "pbiviz package",
-    "lint": "eslint . --ext .ts",
-    "test": "jest",
-    "test:ci": "jest --runInBand --ci"
-  },
-  "author": "Data Lake Visual Family",
-  "license": "UNLICENSED",
-  "dependencies": {
-    "d3": "^7.8.5",
-    "jspdf": "^2.5.2",
-    "jspdf-autotable": "^3.8.4",
-    "powerbi-visuals-api": "~5.3.0",
-    "powerbi-visuals-utils-formattingmodel": "^6.2.2",
-    "xlsx": "^0.18.5"
-  },
-  "devDependencies": {
-    "@types/d3": "^7.4.3",
-    "@types/jest": "^29.5.12",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^30.4.1",
-    "less": "^4.2.0",
-    "powerbi-visuals-tools": "^7.2.1",
-    "ts-jest": "^29.1.2",
-    "typescript": "^5.4.5"
-  }
+    "name":  "data-lake-variance-table",
+    "version":  "1.0.0",
+    "description":  "Advanced comparison table with actuals, previous values, plan, forecast, variance indicators, totals, and governed formatting.",
+    "private":  true,
+    "scripts":  {
+                    "start":  "pbiviz start",
+                    "package":  "pbiviz package",
+                    "lint":  "eslint . --ext .ts",
+                    "test":  "jest",
+                    "test:ci":  "jest --runInBand --ci"
+                },
+    "author":  "Data Lake Visual Family",
+    "license":  "UNLICENSED",
+    "dependencies":  {
+                         "d3":  "^7.8.5",
+                         "jspdf":  "^2.5.2",
+                         "jspdf-autotable":  "^3.8.4",
+                         "powerbi-visuals-api":  "~5.3.0",
+                         "powerbi-visuals-utils-formattingmodel":  "^6.2.2",
+                         "xlsx":  "^0.18.5"
+                     },
+    "devDependencies":  {
+                            "@types/d3":  "^7.4.3",
+                            "@types/jest":  "^29.5.12",
+                            "jest":  "^29.7.0",
+                            "jest-environment-jsdom":  "^30.4.1",
+                            "less":  "^4.2.0",
+                            "powerbi-visuals-tools":  "^7.2.1",
+                            "ts-jest":  "^29.1.2",
+                            "typescript":  "^5.4.5"
+                        }
 }
