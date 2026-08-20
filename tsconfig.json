@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "lib": ["es2017", "dom"],
+        "strict": true,
+        "strictNullChecks": false,
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "outDir": "./.tmp/build/",
+        "declaration": false,
+        "experimentalDecorators": true,
+        "allowJs": false,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true
+    },
+    "include": ["src/**/*.ts"],
+    "files": ["src/visual.ts"],
+    "exclude": ["node_modules", ".tmp"]
+}

@@ -1,0 +1,414 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Category",
+      "name": "category",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Group",
+      "name": "group",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Values",
+      "name": "values",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Previous",
+      "name": "previous",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Plan",
+      "name": "plan",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Forecast",
+      "name": "forecast",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Tooltips",
+      "name": "tooltips",
+      "kind": "Grouping"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "category"
+              }
+            },
+            {
+              "for": {
+                "in": "group"
+              }
+            },
+            {
+              "for": {
+                "in": "values"
+              }
+            },
+            {
+              "for": {
+                "in": "previous"
+              }
+            },
+            {
+              "for": {
+                "in": "plan"
+              }
+            },
+            {
+              "for": {
+                "in": "forecast"
+              }
+            },
+            {
+              "for": {
+                "in": "tooltips"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "window": {
+              "count": 30000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "objects": {
+    "general": {
+      "displayName": "General",
+      "properties": {
+        "fontFamily": {
+          "displayName": "Font family",
+          "type": {
+            "text": true
+          }
+        },
+        "fontSize": {
+          "displayName": "Font size",
+          "type": {
+            "numeric": true
+          }
+        },
+        "rowHeight": {
+          "displayName": "Row height",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "header": {
+      "displayName": "Header",
+      "properties": {
+        "bgColor": {
+          "displayName": "Background color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontColor": {
+          "displayName": "Font color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "bold": {
+          "displayName": "Bold",
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "cells": {
+      "displayName": "Cells",
+      "properties": {
+        "bgColor": {
+          "displayName": "Background color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontColor": {
+          "displayName": "Font color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "alternateRowColor": {
+          "displayName": "Alternate row color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "formatting": {
+      "displayName": "Data bars",
+      "properties": {
+        "enableDataBars": {
+          "displayName": "Show data bars",
+          "type": {
+            "bool": true
+          }
+        },
+        "barColor": {
+          "displayName": "Bar color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "totals": {
+      "displayName": "Totals",
+      "properties": {
+        "show": {
+          "displayName": "Show totals row",
+          "type": {
+            "bool": true
+          }
+        },
+        "label": {
+          "displayName": "Label",
+          "type": {
+            "text": true
+          }
+        },
+        "bgColor": {
+          "displayName": "Background color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "virtualScrolling": {
+      "displayName": "Smooth scrolling",
+      "properties": {
+        "enabled": {
+          "displayName": "Enabled",
+          "type": {
+            "bool": true
+          }
+        },
+        "rowHeight": {
+          "displayName": "Row height",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "toolbar": {
+      "displayName": "Toolbar",
+      "properties": {
+        "showMenu": {
+          "displayName": "Show toolbar",
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "search": {
+      "displayName": "Search",
+      "properties": {
+        "enabled": {
+          "displayName": "Enable search",
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "grouping": {
+      "displayName": "Grouping",
+      "properties": {
+        "defaultExpanded": {
+          "displayName": "Expand groups by default",
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "filters": {
+      "displayName": "Column filters",
+      "properties": {
+        "showIcons": {
+          "displayName": "Show column filter icons",
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "conditionalFormatting": {
+      "displayName": "Conditional formatting",
+      "properties": {
+        "enabled": {
+          "displayName": "Enable color scale",
+          "type": {
+            "bool": true
+          }
+        },
+        "minColor": {
+          "displayName": "Low color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "maxColor": {
+          "displayName": "High color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "userConfig": {
+      "displayName": "Saved table configuration",
+      "properties": {
+        "state": {
+          "displayName": "Saved state (internal)",
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "savedView": {
+      "displayName": "Saved view (internal)",
+      "properties": {
+        "state": {
+          "displayName": "Saved view state (internal)",
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "exportGovernance": {
+      "displayName": "Export governance",
+      "properties": {
+        "enabled": {
+          "displayName": "Enable export watermark",
+          "type": {
+            "bool": true
+          }
+        },
+        "watermarkText": {
+          "displayName": "Watermark text",
+          "type": {
+            "text": true
+          }
+        },
+        "locale": {
+          "displayName": "Locale",
+          "type": {
+            "text": true
+          }
+        },
+        "currency": {
+          "displayName": "Currency code",
+          "type": {
+            "text": true
+          }
+        },
+        "username": {
+          "displayName": "Audit username",
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "linkActions": {
+      "displayName": "Link actions",
+      "properties": {
+        "rules": {
+          "displayName": "Link rules (JSON)",
+          "type": {
+            "text": true
+          }
+        },
+        "iconColumn": {
+          "displayName": "Icon column",
+          "type": {
+            "text": true
+          }
+        },
+        "validationMessage": {
+          "displayName": "Validation",
+          "type": {
+            "text": true
+          }
+        }
+      }
+    }
+  },
+  "tooltips": {
+    "supportedTypes": {
+      "default": true,
+      "canvas": true
+    },
+    "roles": [
+      "tooltips"
+    ],
+    "supportEnhancedTooltips": true
+  },
+  "supportsKeyboardFocus": true,
+  "supportsLandingPage": true,
+  "supportsMultiVisualSelection": true,
+  "privileges": []
+}

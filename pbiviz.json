@@ -1,0 +1,26 @@
+{
+  "visual": {
+    "name": "FFLEXAT",
+    "displayName": "FFLEXAT",
+    "guid": "fflexat_29c0f8136ecc42e1ba0233701d401418",
+    "visualClassName": "DataLakeTables",
+    "version": "1.0.0.1",
+    "description": "FFLEXAT \u2014 governed comparison tables for actual, plan, forecast, and variance analysis.",
+    "supportUrl": "https://www.skibaanalytics.com/support",
+    "gitHubUrl": "https://github.com/muhumuza684/KIBA-powerbi-visuals"
+  },
+  "apiVersion": "5.3.0",
+  "author": {
+    "name": "Data Lake Visual Family",
+    "email": "hello@datalakevisuals.example"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "stringResources": [
+    "stringResources/en-US/resources.resjson"
+  ]
+}
