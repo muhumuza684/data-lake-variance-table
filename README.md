@@ -12,3 +12,7 @@ This is an independently implemented Data Lake visual. Reference materials infor
 ## Validation
 
 Run npm ci, npm run test:ci, npx tsc --noEmit -p ., and npx pbiviz package before release. Complete a Power BI Desktop smoke test with representative data before publishing.
+
+## Data Lake production usage
+
+See docs/PRODUCT_USAGE_GUIDE.md and the reference CSV under sample-data.

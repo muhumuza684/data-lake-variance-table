@@ -1107,3 +1107,39 @@
   color: var(--dlt-ink);
 }
 .dlt-custom-palette-help { margin-top: 4px; color: #5d6a6f; font-size: 11px; }
+/* Data Lake responsive and accessible baseline. Mobile exclusion-zone rules remain protected. */
+:root {
+  --datalake-navy: #12304a;
+  --datalake-navy-deep: #0b2033;
+  --datalake-yellow: #f4c542;
+  --datalake-surface: #ffffff;
+  --datalake-border: #c8d3dc;
+  --datalake-focus: #0b6e99;
+  --datalake-text: #12212f;
+  --datalake-muted: #526577;
+}
+.skiba-tables-visual, .data-lake-visual, .datalake-visual {
+  color: var(--datalake-text); background: var(--datalake-surface);
+  box-sizing: border-box; min-width: 0; min-height: 0; overflow: auto; scrollbar-width: thin;
+}
+.skiba-tables-visual *, .data-lake-visual *, .datalake-visual * { box-sizing: border-box; }
+.skiba-tables-visual button:focus-visible, .skiba-tables-visual input:focus-visible,
+.skiba-tables-visual select:focus-visible, .skiba-tables-visual [tabindex]:focus-visible,
+.data-lake-visual button:focus-visible, .data-lake-visual input:focus-visible,
+.data-lake-visual select:focus-visible, .data-lake-visual [tabindex]:focus-visible {
+  outline: 3px solid var(--datalake-focus); outline-offset: 2px;
+}
+@media (max-width: 480px) {
+  .skiba-tables-visual, .data-lake-visual, .datalake-visual { font-size: 11px; }
+  .datalake-toolbar { gap: 4px; flex-wrap: wrap; }
+  .datalake-secondary { display: none; }
+}
+@media (min-width: 481px) and (max-width: 960px) {
+  .skiba-tables-visual, .data-lake-visual, .datalake-visual { font-size: 12px; }
+}
+@media (min-width: 961px) {
+  .skiba-tables-visual, .data-lake-visual, .datalake-visual { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skiba-tables-visual *, .data-lake-visual *, .datalake-visual * { transition: none !important; animation: none !important; }
+}

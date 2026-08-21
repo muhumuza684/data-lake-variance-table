@@ -1,4 +1,4 @@
-﻿node_modules/
+node_modules/
 dist/
 .tmp/
 *.log
@@ -6,3 +6,6 @@ webpack.statistics.*.html
 .batch-backup-*/
 *.bak
 .env
+.validation-*.log
+coverage/
+dist/

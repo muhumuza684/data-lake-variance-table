@@ -1,29 +1,29 @@
-name: Build Data Lake Variance Table
-
+name: Build Power BI visual
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
   workflow_dispatch:
-
+permissions:
+  contents: read
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-      - run: npm ci --ignore-scripts
+      - run: npm ci
+      - run: npm run typecheck
       - run: npm run test:ci
-      - run: npx tsc --noEmit -p .
-      - run: npx pbiviz package
-      - name: Upload Power BI package
-        uses: actions/upload-artifact@v4
+      - run: npm run lint
+      - run: npm run package
+      - uses: actions/upload-artifact@v4
         with:
-          name: data-lake-variance-table-pbiviz
+          name: powerbi-visual
           path: dist/*.pbiviz
           if-no-files-found: error
-          retention-days: 30
